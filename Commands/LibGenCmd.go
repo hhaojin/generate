@@ -3,8 +3,8 @@ package Commands
 import (
 	"flag"
 	"fmt"
-	"gitee.com/hhaojin/generate/Helper"
-	"gitee.com/hhaojin/generate/TplParser"
+	"github.com/hhaojin/generate/Helper"
+	"github.com/hhaojin/generate/TplParser"
 	"log"
 	"os"
 	"strings"

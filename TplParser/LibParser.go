@@ -1,8 +1,8 @@
 package TplParser
 
 import (
-	"gitee.com/hhaojin/generate/Helper"
-	"gitee.com/hhaojin/generate/resource"
+	"github.com/hhaojin/generate/Helper"
+	"github.com/hhaojin/generate/resource"
 	"log"
 	"os"
 	"text/template"

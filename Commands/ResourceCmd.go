@@ -2,7 +2,7 @@ package Commands
 
 import (
 	"flag"
-	"gitee.com/hhaojin/generate/Helper"
+	"github.com/hhaojin/generate/Helper"
 	"io/ioutil"
 	"log"
 	"os"

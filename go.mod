@@ -1,4 +1,4 @@
-module gitee.com/hhaojin/generate
+module github.com/hhaojin/generate
 
 go 1.13
 

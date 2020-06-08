@@ -5,7 +5,7 @@ import (
 	"compress/gzip"
 	"encoding/base64"
 	"fmt"
-	"gitee.com/hhaojin/generate/AstParser"
+	"github.com/hhaojin/generate/AstParser"
 	"go/ast"
 	"io/ioutil"
 	"log"
