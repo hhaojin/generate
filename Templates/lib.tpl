@@ -2,7 +2,7 @@ package lib
 
 import (
 	"github.com/gin-gonic/gin"
-	"gitee.com/hhaojin/generate/framework/gin_"
+	"github.com/hhaojin/generate/framework/gin_"
 )
 
 func init() {

@@ -1,6 +1,6 @@
 package main
 
-import "gitee.com/hhaojin/generate/Commands"
+import "github.com/hhaojin/generate/Commands"
 
 func main() {
 	//user := models.NewUsersModel()

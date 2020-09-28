@@ -6,7 +6,7 @@
 
 #### 安装
 ```
-go get gitee.com/hhaojin/generate
+go get github.com/hhaojin/generate
 ```
 
 #### 使用说明
