@@ -10,6 +10,7 @@ type SysConfig struct {
 	DB struct {
 		Driver string
 		DSN    string
+		Prefix string
 	}
 }
 

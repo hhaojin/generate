@@ -1,3 +1,4 @@
 db:
   driver: mysql
-  dsn: root:123456@tcp(127.0.0.1:3306)/study?charset=utf8&parseTime=True&loc=Local
+  dsn: select:Lives##@@2020*IK(OL@tcp(211.159.215.13:61094)/chungou_lives?charset=utf8mb4&parseTime=True&loc=Local
+  prefix: cg_

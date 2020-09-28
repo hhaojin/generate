@@ -47,12 +47,14 @@ func (this *DBCommand) Run() {
 	}
 	if *this.TableName != "" { // 生成模型
 		db := Helper.NewDB(config.DB.Driver, config.DB.DSN)
-		data, err := db.DescTable(*this.TableName) //DBModel 包含了 tablename 以及 字段名等
+		data, err := db.DescTable(*this.TableName, config.DB.Prefix) //DBModel 包含了 tablename 以及 字段名等
 		if err != nil {
 			log.Fatal("model error:", err.Error())
 		}
 		dm := TplParser.NewDBModelParser()
-		dm.Parse(data, *this.Dir, *this.TableName)
+
+		fmt.Println(Helper.CamelCase(data.TableName))
+		dm.Parse(data, *this.Dir, Helper.CamelCase(data.TableName))
 		fmt.Println("生成模型")
 	}
 }

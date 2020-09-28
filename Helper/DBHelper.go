@@ -5,6 +5,7 @@ import (
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/jmoiron/sqlx"
 	"log"
+	"strings"
 )
 
 //把数据结构 映射成 map切片
@@ -41,7 +42,7 @@ type MyDB struct {
 }
 
 //获取表结构
-func (this *MyDB) DescTable(tableName string) (*DBModel, error) {
+func (this *MyDB) DescTable(tableName string, prefix string) (*DBModel, error) {
 	rows, err := this.Query("desc " + tableName)
 	if err != nil {
 		return nil, err
@@ -55,6 +56,7 @@ func (this *MyDB) DescTable(tableName string) (*DBModel, error) {
 	if err != nil {
 		return nil, err
 	}
+	tableName = strings.Replace(tableName, prefix, "", 1)
 	return &DBModel{Data: data, TableName: tableName}, nil
 
 }
